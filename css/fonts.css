@@ -12,6 +12,7 @@
   src: url("/assets/fonts/IRANYekanWebBold.woff") format("woff");
 }
 
-body {
+body,
+button {
   font-family: "iranYekan";
 }
