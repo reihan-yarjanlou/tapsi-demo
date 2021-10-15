@@ -5,7 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  list-style: none;
+  /* list-style: none; */
 }
 
 /* root variable */
@@ -114,4 +114,35 @@ h2 {
   }
 }
 
-/*  */
+/* List */
+
+.list {
+  list-style: none;
+  font-size: 1.8rem;
+}
+.list--inline .list__item {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+/* .list--tick .list__item::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(/assets/images/Tick-Square.svg) no-repeat;
+  padding-right: 2rem;
+} */
+
+.list--tick .list__item {
+  background: url(/assets/images/Tick-Square.svg) no-repeat;
+  background-position: right center;
+  padding-right: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+}
