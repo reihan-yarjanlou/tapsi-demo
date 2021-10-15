@@ -78,7 +78,7 @@ h2 {
   color: var(--color-white);
 }
 
-.btn-block {
+.btn--block {
   width: 100%;
   font-size: 1.6rem;
 }
@@ -152,12 +152,13 @@ h2 {
 
 .block-plan {
   display: grid;
-  gap: 2rem 3rem;
-  margin-top: 2rem;
+  gap: 5rem 3rem;
+  margin-top: 5rem;
 }
 .plan {
-  max-width: 500px;
+  max-width: 450px;
   font-size: 1.8rem;
+  transition: all 0.2s ease-out;
 }
 
 .card {
@@ -194,8 +195,31 @@ h2 {
   display: block;
 }
 
+.plan .btn--block {
+  margin-top: 10rem;
+  font-size: 1.6rem;
+}
+
+.plan--popular {
+  transform: scale(1.1);
+}
+.plan--popular:hover {
+  transform: scale(1.15);
+}
+.plan:hover {
+  transform: scale(1.05);
+}
+
 @media screen and (min-width: 1024px) {
   .block-plan {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .plan .btn--block {
+    font-size: 1.8rem;
+  }
+  .block-plan {
+    display: grid;
+    gap: 2rem 4rem;
+    margin-top: 5rem;
   }
 }
