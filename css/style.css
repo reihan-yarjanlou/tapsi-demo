@@ -278,6 +278,7 @@ h2 {
 .contact-us__map {
   display: none;
 }
+
 @media screen and (min-width: 1024px) {
   .contact-us {
     grid-template-areas:
@@ -299,4 +300,25 @@ h2 {
   .contact-us__icons {
     grid-area: icons;
   }
+}
+
+/* ICOONS */
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-container {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.icon--primary {
+  fill: #445;
 }
