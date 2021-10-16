@@ -26,6 +26,7 @@ html {
 body {
   color: var(--color-body);
   font-size: 1.4rem;
+  line-height: 1.7;
 }
 
 h1,
@@ -41,6 +42,7 @@ h1 {
 
 h2 {
   font-size: 2.2rem;
+  margin-bottom: 1.5rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -52,6 +54,7 @@ h2 {
   }
   h2 {
     font-size: 3.5rem;
+    margin-bottom: 3.5rem;
   }
 }
 
@@ -223,6 +226,45 @@ h2 {
 /* container */
 
 .container {
-  /* max-width: 1140px; */
+  max-width: 1140px;
   margin: 0 auto;
+}
+
+/* FEATURE */
+
+.feature {
+  display: grid;
+  padding: 2rem;
+}
+.feature__text {
+  margin-bottom: 2rem;
+}
+.feature .btn {
+  padding: 1.2rem 3rem;
+}
+
+.feature__image > img {
+  width: 70%;
+  height: auto;
+}
+.feature__image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .feature {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .feature__image {
+    order: 2;
+    margin-bottom: 0;
+  }
+  .feature__detail {
+    order: 1;
+  }
+  .feature__image > img {
+    width: 100%;
+  }
 }
