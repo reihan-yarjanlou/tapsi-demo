@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Tapsi Demo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <section class="hero-section">
@@ -37,15 +44,40 @@
           class="banner-img"
         />
       </picture>
-      <div class="hero-wrapper">
+      <picture>
+        <source srcset="https://tapsi.ir/images/home/mockup-phone.webp" type="image/webp" media="(min-width: 1024px)">
+        <source srcset="https://tapsi.ir/images/home/mockup-phone.png" type="image/png" media="(min-width: 1024px)">
+        <img alt="phone" class="banner-phone">
+     </picture>
+      <div class="hero-wrapper container">
         <div class="intro-btn">
           <h1>تپسی</h1>
           <h2>اپلیکیشن درخواست خودرو و پیک</h2>
-          <div class="intro-btn__passenger">دانلود اپلیکیشن مسافران</div>
-          <div class="intro-btn__passenger">دانلود اپلیکیشن مسافران</div>
-          <div class="intro-btn__passenger">دانلود اپلیکیشن مسافران</div>
-          <div class="intro-btn__passenger">دانلود اپلیکیشن مسافران</div>
-        </div>
+          <div class="intro-wrapper">
+            <div class="intro-btn__passenger">
+              <span class="icon">
+                <i class="fas fa-cloud-download-alt"></i>
+              </span>
+              <p>دانلود اپلیکیشن مسافران</p>
+            </div>
+            <div class="intro-btn__passenger">
+              <span class="icon">
+                <i class="fas fa-cloud-download-alt"></i>
+              </span>
+              <p>وب اپلیکیشن مسافران</p>
+            </div>
+            <div class="intro-btn__passenger driver-intro">
+              <span class="icon">
+                <i class="fas fa-cloud-download-alt"></i>
+              </span>
+              <p>دانلود اپلیکیشن رانندگان</p>
+            </div>
+            <div class="intro-btn__passenger driver-intro">
+              <span class="icon">
+                <i class="fas fa-car"></i>
+              </span>
+              <p>ثبت نام راننده</p>
+            </div>        
       </div>
     </section>
   </body>

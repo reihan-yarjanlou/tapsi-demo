@@ -615,10 +615,11 @@ textarea {
 /* HERO SECTION */
 
 .hero-section {
+  position: relative;
   width: 100%;
   height: 478px;
 }
-.hero-section img {
+.hero-section .banner-img {
   width: 100%;
   height: auto;
 }
@@ -660,4 +661,65 @@ textarea {
   border-radius: 12px;
   margin-bottom: 2rem;
   padding: 14px;
+  width: 220px;
+}
+.intro-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.intro-btn__passenger {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.intro-btn__passenger p {
+  font-size: 1.4rem;
+}
+.intro-btn__passenger > i {
+  color: #000;
+}
+.intro-btn__passenger.driver-intro {
+  border: 2px solid #fff;
+  background-color: rgba(23, 26, 60, 0.5) !important;
+  color: #fff;
+}
+.banner-phone {
+  display: none;
+  position: absolute;
+  left: 10%;
+  bottom: -50%;
+  height: auto;
+  width: 420px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-wrapper {
+    justify-content: flex-start;
+  }
+  .intro-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .intro-btn {
+    width: 500px;
+    padding: 0 25px;
+    border-radius: 20px;
+  }
+  .intro-btn h1 {
+    font-size: 5rem;
+  }
+  .intro-btn h2 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .intro-btn__passenger p {
+    font-size: 1.5rem;
+  }
+  .banner-phone {
+    display: block;
+  }
 }
