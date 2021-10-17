@@ -9,5 +9,25 @@
     <title>Tapsi Demo</title>
   </head>
   <body>
+    <nav class="navbar">
+      <a href="#">
+        <img src="./assets/images/logo.svg" alt="" />
+      </a>
+      <span class="nav__toggler"> menu</span>
+      <ul class="list">
+        <li class="nav__item"><a href="#">پشتیبانی</a></li>
+        <li class="nav__item"><a href="#">خدمات کسب و کارها</a></li>
+        <li class="nav__item"><a href="#">فرصت های شغلی</a></li>
+        <li class="nav__item"><a href="#">وبلاگ</a></li>
+      </ul>
+    </nav>
+    <script>
+      const toggler = document.querySelector(".nav__toggler");
+      const navbar = document.querySelector(".navbar");
+      toggler.addEventListener("click", (e) => {
+        console.log("clicked");
+        navbar.classList.toggle("expanded");
+      });
+    </script>
   </body>
 </html>
