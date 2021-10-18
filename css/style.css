@@ -235,16 +235,18 @@ h2 {
 .feature {
   display: grid;
   padding: 2rem;
+  gap: 0rem 10rem;
 }
 .feature__text {
   margin-bottom: 2rem;
+  text-align: justify;
 }
 .feature .btn {
   padding: 1.2rem 3rem;
 }
 
 .feature__image > img {
-  width: 70%;
+  width: 100%;
   height: auto;
 }
 .feature__image {
@@ -256,6 +258,9 @@ h2 {
 @media screen and (min-width: 1024px) {
   .feature {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .charge .feature__image {
+    order: 1;
   }
   .feature__image {
     order: 2;
@@ -816,7 +821,12 @@ textarea {
 }
 
 .block {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
+}
+@media screen and (min-width: 768px) {
+  .block {
+    padding: 6rem 2rem;
+  }
 }
 .block-heading {
   margin-top: 6rem;
