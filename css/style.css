@@ -659,6 +659,7 @@ textarea {
   border-radius: 12px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 290px;
 }
 .intro-btn h1 {
