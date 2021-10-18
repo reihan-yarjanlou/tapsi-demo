@@ -750,6 +750,7 @@ textarea {
 
 .services__tabs .tab {
   opacity: 0.5;
+  cursor: pointer;
   transition: all 0.3s ease-out;
 }
 .services__tabs .tab:hover {
@@ -778,6 +779,16 @@ textarea {
   width: 100%;
 }
 
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: flex;
+}
+.tab.active {
+  opacity: 1;
+}
+
 @media screen and (min-width: 1024px) {
   .services__tabs .tab > p {
     margin-top: 1rem;
@@ -802,14 +813,4 @@ textarea {
   .services .feature__image img {
     width: 100%;
   }
-}
-
-.tab-content {
-  display: none;
-}
-.tab-content.active {
-  display: flex;
-}
-.tab.active {
-  opacity: 1;
 }
