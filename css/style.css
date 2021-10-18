@@ -213,7 +213,9 @@ h2 {
 .plan:hover {
   transform: scale(1.05);
 }
-
+.plan .list__item {
+  font-size: 1.4rem;
+}
 @media screen and (min-width: 1024px) {
   /* .block-plan {
     grid-template-columns: repeat(3, 1fr);
