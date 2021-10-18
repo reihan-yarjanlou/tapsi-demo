@@ -814,3 +814,10 @@ textarea {
     width: 100%;
   }
 }
+
+.block {
+  padding: 6rem 2rem;
+}
+.block-heading {
+  margin-top: 6rem;
+}
