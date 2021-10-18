@@ -22,18 +22,22 @@
 
 html {
   font-size: 62.5%;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
 }
 body {
   color: var(--color-body);
   font-size: 1.4rem;
   line-height: 1.7;
-  -webkit-text-size-adjust: none;
+}
+html,
+body {
   text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
 }
 p {
   -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
   text-size-adjust: none;
 }
 h1,
@@ -660,7 +664,7 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 290px;
+  max-width: 300px;
 }
 .intro-btn h1 {
   font-size: 2.5rem;
@@ -670,7 +674,7 @@ textarea {
 .intro-btn h2 {
   font-size: 1.6rem;
   color: #fff;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 .intro-btn__passenger {
   background-color: #fff;
@@ -722,6 +726,7 @@ textarea {
   }
   .intro-btn {
     width: 500px;
+    max-width: 500px;
     padding: 0 25px;
     border-radius: 20px;
   }
