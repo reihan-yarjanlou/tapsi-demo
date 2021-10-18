@@ -244,6 +244,7 @@ h2 {
 
 .feature {
   display: grid;
+  justify-content: center;
   padding: 2rem;
   gap: 0rem 10rem;
 }
@@ -260,8 +261,8 @@ h2 {
   height: auto;
 }
 .feature__image {
-  display: flex;
-  justify-content: center;
+  width: 90%;
+  justify-self: flex-end;
   margin-bottom: 2rem;
 }
 
@@ -273,6 +274,7 @@ h2 {
     order: 1;
   }
   .feature__image {
+    width: 100%;
     order: 2;
     margin-bottom: 0;
   }
