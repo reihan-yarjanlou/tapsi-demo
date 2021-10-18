@@ -659,7 +659,7 @@ textarea {
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  width: 270px;
+  width: 290px;
 }
 .intro-btn h1 {
   font-size: 2.5rem;
@@ -690,7 +690,7 @@ textarea {
   justify-content: space-around;
 }
 .intro-btn__passenger p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .intro-btn__passenger > i {
   color: #000;
