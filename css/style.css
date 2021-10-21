@@ -918,14 +918,6 @@ textarea {
   color: var(--color-primary);
 }
 .select-control input[type="radio"]:checked + label::before {
-  position: absolute;
-  right: 25px;
-  top: 50%;
-  transform: translateY(-50%);
-  content: "";
-  width: 15px;
-  height: 15px;
-  border-radius: 100%;
   border: 3px solid #fff;
   box-shadow: 0 0 0 2px var(--color-primary);
   background-color: var(--color-primary);
