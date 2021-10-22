@@ -31,12 +31,29 @@
           doloremque a.
         </div>
       </div>
+      <div class="accordion">
+        <header class="accordion__header">
+          <h2 class="accordion__heading">سابقه تحصیلی</h2>
+          <span class="">
+            <i class="fas fa-chevron-circle-left"></i>
+          </span>
+        </header>
+        <div class="accordion__content">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          aliquid beatae quam neque aut minima repellat ex incidunt. Excepturi
+          sequi veniam eveniet ratione aspernatur non iusto repellendus qui
+          doloremque a.
+        </div>
+      </div>
     </section>
     <script>
-      const accordionHeader = document.querySelector(".accordion__header");
+      const accordionHeaders = document.querySelectorAll(".accordion__header");
       const accordion = document.querySelector(".accordion");
-      accordionHeader.addEventListener("click", (e) => {
-        accordion.classList.toggle("accordion__expanded");
+      accordionHeaders.forEach((item) => {
+        item.addEventListener("click", (e) => {
+          console.log(e.target.parentElement);
+          e.target.parentElement.classList.toggle("accordion__expanded");
+        });
       });
     </script>
   </body>
