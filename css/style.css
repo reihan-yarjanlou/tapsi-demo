@@ -1031,3 +1031,57 @@ textarea {
   margin-right: 5px;
   display: inline-block;
 }
+
+/* SELEECT TYPE WEBINAR SECTION */
+
+.select-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.select-control input[type="radio"] {
+  display: none;
+}
+.select-control {
+  cursor: pointer;
+  flex-grow: 1;
+}
+.select-type :not(:last-child) {
+  margin-left: 2rem;
+}
+.select-control label {
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  border-radius: 32px;
+  border: 2px solid #ccc;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  color: #444;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease-out;
+}
+.select-control label::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  box-shadow: 0 0 0 2px #ccc;
+  border-radius: 100%;
+  right: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 3px solid #fff;
+  transition: all 0.3s ease-out;
+}
+
+.select-control input[type="radio"]:checked + label {
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.select-control input[type="radio"]:checked + label::before {
+  box-shadow: 0 0 0 2px var(--color-primary);
+  background-color: var(--color-primary);
+}
