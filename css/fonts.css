@@ -16,9 +16,9 @@ body,
 button {
   font-family: "iranYekan";
 }
-
-
-
+* {
+  -webkit-user-select: none;
+}
 
 /*  PREVENT TEXT SIZE SCALLING */
 
